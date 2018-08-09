@@ -1,0 +1,7 @@
+- name: random_message_hello
+  platform: command_line
+  command: "/home/homeassistant/bin/random-message.pl hello"
+
+- name: random_message_goodbye
+  platform: command_line
+  command: "/home/homeassistant/bin/random-message.pl goodbye"

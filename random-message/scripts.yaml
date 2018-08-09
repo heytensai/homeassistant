@@ -1,0 +1,20 @@
+office_hello:
+  sequence:
+    - service: notify.random_message_hello
+      data_template:
+        message: ""
+    - service: notify.your_notify_service
+      data_template:
+        message: >-
+          {{ states('sensor.random_message_hello') }}
+
+office_goodbye:
+  sequence:
+    - service: notify.random_message_goodbye
+      data_template:
+        message: ""
+    - service: notify.your_notify_service
+      data_template:
+        message: >-
+          {{ states('sensor.random_message_goodbye') }}
+

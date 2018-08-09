@@ -1,0 +1,6 @@
+- platform: mqtt
+  name: "Random Message Hello"
+  state_topic: "message/hello"
+- platform: mqtt
+  name: "Random Message Goodbye"
+  state_topic: "message/goodbye"

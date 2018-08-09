@@ -1,0 +1,16 @@
+- alias: WHEN office occupied on DO say something crazy
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.office_occupied
+      to: 'on'
+  action:
+    service: script.office_hello
+
+- alias: WHEN office occupied off DO say something crazy
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.office_occupied
+      to: 'off'
+  action:
+    service: script.office_goodbye
+
